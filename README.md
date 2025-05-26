@@ -1,15 +1,15 @@
 
-# 📉 Customer Churn Prediction
+# Customer Churn Prediction
 
 This project uses machine learning to predict whether a telecom customer will churn.
 
-## 🔍 Overview
+## Overview
 
 - **Dataset**: Telco Customer Churn (Kaggle)
 - **Models**: Random Forest (default), extensible to XGBoost, etc.
 - **Libraries**: Pandas, Scikit-learn, Streamlit
 
-## 📁 Project Structure
+## Project Structure
 
 - `data/`: Contains the dataset
 - `notebooks/`: Jupyter notebooks for EDA and modeling
@@ -19,7 +19,7 @@ This project uses machine learning to predict whether a telecom customer will ch
 - `tests/`: Unit tests for core functionalities
 - `requirements.txt`: Python dependencies
 
-## 🚀 How to Run
+## How to Run
 
 1. Clone the repository:
    ```bash
@@ -27,28 +27,28 @@ This project uses machine learning to predict whether a telecom customer will ch
    cd customer-churn-prediction
    ```
 
-2. Create a virtual environment and install dependencies:
+2. Create a virtual environment and install dependencies
    ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    pip install -r requirements.txt
    ```
 
-3. Run the Streamlit app:
+3. Run the Streamlit app
    ```bash
    streamlit run app.py
    ```
 
-## 📊 Model Performance
+## Model Performance
 
 - **ROC-AUC**: ~81%
 - **F1 Score**: ~0.79
 
-## ✅ Features Used
+## Features Used
 
 - Tenure, Monthly Charges, Contract type, and more.
 
-## 🔧 Improvements & Future Work
+## Improvements & Future Work
 
 - [x] Hyperparameter tuning
 - [x] Handle class imbalance
@@ -56,10 +56,8 @@ This project uses machine learning to predict whether a telecom customer will ch
 - [ ] CI/CD Integration
 - [ ] Docker support
 
-## 📸 App Preview
 
-![App Screenshot](https://via.placeholder.com/600x400.png?text=Streamlit+App+Preview)
 
-## 📜 License
+## License
 
 MIT
