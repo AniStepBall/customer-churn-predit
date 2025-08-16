@@ -1,7 +1,15 @@
 
 # Customer Churn Prediction
 
-This project uses machine learning to predict whether a telecom customer will churn.
+The project demonstrates **data preprocessing, pipeline engineering, hyperparameter tuning, and model persistence**, making it a strong showcase of practical data science skills.  
+The project demonstrates an end-to-end approach to solving churn prediction with a focus on scalability, interpretability, and reproducibility and covers the lifecycle of a data science workflow
+•	Data ingestion and preprocessing
+•	Handling categorical, numerical, and binary features
+•	Building reusable preprocessing pipelines with scikit-learn
+•	Training a baseline model (Random Forest) and optimizing it with GridSearchCV
+•	Evaluating performance with classification metrics and ROC-AUC
+•	Saving and loading trained models for deployment
+
 
 ## Overview
 
@@ -18,6 +26,9 @@ This project uses machine learning to predict whether a telecom customer will ch
 - `app.py`: Streamlit web application
 - `tests/`: Unit tests for core functionalities
 - `requirements.txt`: Python dependencies
+- README.md
+
+
 
 ## How to Run
 
@@ -47,14 +58,36 @@ This project uses machine learning to predict whether a telecom customer will ch
 ## Features Used
 
 - Tenure, Monthly Charges, Contract type, and more.
+- Preprocessing Pipelines
+  - Handles missing values, categorical encoding, scaling, and binary encoding  
+  - Reproducible with `ColumnTransformer` and `Pipeline`
+ Modeling
+  - Baseline: Random Forest Classifier  
+  - Hyperparameter tuning with `GridSearchCV`  
+  - Model persistence with `joblib`  
+
+Evaluation Metrics
+  - Precision, Recall, F1-Score  
+  - ROC-AUC Score for robust performance measurement  
+
 
 ## Improvements & Future Work
 
 - [x] Hyperparameter tuning
-- [x] Handle class imbalance
+- [x] Address class imbalance with SMOTE or class weighting
 - [x] Model comparison (XGBoost, etc.)
 - [ ] CI/CD Integration
 - [ ] Docker support
+- [ ] Add XGBoost / LightGBM for improved performance
+- [ ] Perform feature importance analysis to understand churn drivers
+- [ ] Use SHAP or LIME for interpretability
+- [ ] Deploy model via Flask/FastAPI or Streamlit dashboard
+- [ ] Automate training with MLflow or DVC
+- [ ] Build a real-time churn prediction API
+
+**References**
+Dataset: Telco Customer Churn Dataset (Kaggle)
+Scikit-learn Documentation: https://scikit-learn.org/stable/
 
 
 
